@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Chonfez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-wrapper">
+            <!-- Formulário de Autenticação -->
+            <div class="auth-box">
+                <div class="auth-logo">
+                    <img src="chonfez-logo.svg" alt="Chonfez Logo">
+                    <h1>チョンフェズ</h1>
+                </div>
+                
+                <!-- Tabs -->
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Login</button>
+                    <button class="auth-tab" data-tab="signup">Cadastro</button>
+                </div>
+                
+                <!-- Login Form -->
+                <form id="login-form" class="auth-form active">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="login-password">Senha</label>
+                        <div class="password-group">
+                            <input type="password" id="login-password" required>
+                            <button type="button" class="toggle-password">👁️</button>
+                        </div>
+                    </div>
+                    
+                    <div class="remember-group">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Lembrar de mim</label>
+                    </div>
+                    
+                    <button type="submit" class="auth-btn">Entrar</button>
+                </form>
+                
+                <!-- Signup Form -->
+                <form id="signup-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="signup-name">Nome</label>
+                        <input type="text" id="signup-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-password">Senha</label>
+                        <div class="password-group">
+                            <input type="password" id="signup-password" required>
+                            <button type="button" class="toggle-password">👁️</button>
+                        </div>
+                        <div class="strength-meter">
+                            <div class="strength-bar"></div>
+                            <span class="strength-text">Força da senha: Fraca</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-level">Nível de Japonês</label>
+                        <select id="signup-level" required>
+                            <option value="beginner">Iniciante (N5)</option>
+                            <option value="basic">Básico (N4)</option>
+                            <option value="intermediate">Intermediário (N3)</option>
+                            <option value="advanced">Avançado (N2)</option>
+                            <option value="fluent">Fluente (N1)</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="auth-btn">Criar Conta</button>
+                </form>
+            </div>
+            
+            <!-- Decoração -->
+            <div class="auth-decoration">
+                <img src="https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?q=80" alt="Japanese Temple">
+                <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?q=80" alt="Tokyo Night">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="db.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html> 

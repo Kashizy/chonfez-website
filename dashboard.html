@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Chonfez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="logo.png" alt="Chonfez Logo">
+            </div>
+            
+            <div class="user-info">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Avatar" class="user-avatar">
+                <h3 class="user-name" id="user-name">Carregando...</h3>
+                <p class="user-plan" id="user-plan">Plano Básico</p>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            Página Inicial
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <i class="fas fa-chart-line"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="profile-link">
+                            <i class="fas fa-user"></i>
+                            Perfil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="plans-link">
+                            <i class="fas fa-crown"></i>
+                            Planos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="logout-button">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Sair
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <header class="dashboard-header">
+                <h1 class="welcome-text">Olá, <span id="header-user-name">Aluno</span>!</h1>
+                <div class="header-actions">
+                    <a href="index.html" class="btn btn-outline">
+                        <i class="fas fa-home"></i>
+                        Página Inicial
+                    </a>
+                    <a href="#" class="btn btn-primary" id="upgrade-plan">
+                        <i class="fas fa-crown"></i>
+                        Upgrade
+                    </a>
+                </div>
+            </header>
+
+            <!-- Estatísticas -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon" style="background: #e3f2fd; color: #1976d2;">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3 class="stat-title">Lições Completadas</h3>
+                    </div>
+                    <p class="stat-value">42</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon" style="background: #fce4ec; color: #c2185b;">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3 class="stat-title">Dias Seguidos</h3>
+                    </div>
+                    <p class="stat-value">7</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon" style="background: #f3e5f5; color: #7b1fa2;">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="stat-title">Pontos</h3>
+                    </div>
+                    <p class="stat-value">850</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon" style="background: #e8f5e9; color: #388e3c;">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3 class="stat-title">Exercícios Concluídos</h3>
+                    </div>
+                    <p class="stat-value">156</p>
+                </div>
+            </div>
+
+            <!-- Progresso e Próxima Lição -->
+            <div class="content-grid">
+                <!-- Progresso -->
+                <section class="progress-section">
+                    <div class="progress-header">
+                        <h2 class="progress-title">Seu Progresso JLPT</h2>
+                        <a href="#" class="btn btn-outline">Ver Detalhes</a>
+                    </div>
+                    <div class="progress-grid">
+                        <!-- Círculos de progresso serão inseridos via JavaScript -->
+                    </div>
+                </section>
+
+                <!-- Próxima Lição -->
+                <section class="next-lesson-section">
+                    <div class="progress-header">
+                        <h2 class="progress-title">Próxima Lição</h2>
+                        <a href="#" class="btn btn-primary">Começar</a>
+                    </div>
+                    <div class="lesson-preview">
+                        <div class="lesson-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="lesson-info">
+                            <h3>Kanji Básicos - Lição 3</h3>
+                            <p>Aprenda 10 novos kanjis essenciais para o JLPT N5</p>
+                            <div class="lesson-meta">
+                                <span><i class="fas fa-clock"></i> 15 minutos</span>
+                                <span><i class="fas fa-star"></i> 50 pontos</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Atividades e Conquistas -->
+            <div class="content-grid">
+                <!-- Atividades Recentes -->
+                <section class="activities-section">
+                    <div class="progress-header">
+                        <h2 class="progress-title">Atividades Recentes</h2>
+                        <a href="#" class="btn btn-outline">Ver Todas</a>
+                    </div>
+                    <ul class="activity-list">
+                        <!-- Atividades serão inseridas via JavaScript -->
+                    </ul>
+                </section>
+
+                <!-- Conquistas -->
+                <section class="achievements-section">
+                    <div class="progress-header">
+                        <h2 class="progress-title">Conquistas</h2>
+                        <a href="#" class="btn btn-outline">Ver Todas</a>
+                    </div>
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3>Primeiro Kanji</h3>
+                            <p>Aprendeu seu primeiro kanji</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <h3>Streak de 7 Dias</h3>
+                            <p>Manteve os estudos por uma semana</p>
+                        </div>
+                        <div class="achievement-card locked">
+                            <div class="achievement-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h3>Mestre do N5</h3>
+                            <p>Complete todos os exercícios do N5</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="db.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html> 

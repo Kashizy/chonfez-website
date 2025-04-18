@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Red circle background -->
+    <circle cx="100" cy="70" r="40" fill="#D42C2A"/>
+    
+    <!-- White onigiri shape -->
+    <path d="M100 40 L130 90 L70 90 Z" fill="white" stroke="#1A1A1A" stroke-width="2"/>
+    
+    <!-- Rice details -->
+    <circle cx="95" cy="70" r="2" fill="#F5F5F5"/>
+    <circle cx="105" cy="65" r="2" fill="#F5F5F5"/>
+    <circle cx="100" cy="75" r="2" fill="#F5F5F5"/>
+    
+    <!-- Text "Chonfez" -->
+    <text x="100" y="140" font-family="Arial" font-size="32" font-weight="bold" text-anchor="middle" fill="#1A1A1A">
+        Chonfez
+    </text>
+    
+    <!-- Japanese text "チョンフェズ" -->
+    <text x="100" y="170" font-family="Noto Sans JP" font-size="24" text-anchor="middle" fill="#1A1A1A">
+        チョンフェズ
+    </text>
+</svg> 

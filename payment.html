@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - Chonfez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="payment-wrapper">
+            <!-- Detalhes do Pagamento -->
+            <div class="payment-details">
+                <div class="payment-header">
+                    <h1>Finalizar Assinatura</h1>
+                    <p>Preencha os dados do seu cartão para concluir a assinatura</p>
+                </div>
+                
+                <!-- Métodos de Pagamento -->
+                <div class="payment-methods">
+                    <div class="payment-method active">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Cartão de Crédito</span>
+                    </div>
+                    <div class="payment-method">
+                        <i class="fas fa-barcode"></i>
+                        <span>Boleto</span>
+                    </div>
+                    <div class="payment-method">
+                        <i class="fas fa-qrcode"></i>
+                        <span>Pix</span>
+                    </div>
+                </div>
+                
+                <!-- Formulário de Pagamento -->
+                <form id="payment-form" class="payment-form">
+                    <div class="form-group">
+                        <label for="card-number">Número do Cartão</label>
+                        <div class="card-input">
+                            <input type="text" id="card-number" placeholder="0000 0000 0000 0000" maxlength="19" required>
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="card-icons">
+                            <img src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/visa.png" alt="Visa" data-brand="visa">
+                            <img src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/mastercard.png" alt="Mastercard" data-brand="mastercard">
+                            <img src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/amex.png" alt="American Express" data-brand="amex">
+                            <img src="https://www.svgrepo.com/show/331577/elo.svg" alt="Elo" data-brand="elo">
+                            <img src="https://logodownload.org/wp-content/uploads/2017/04/hipercard-logo-0.png" alt="Hipercard" data-brand="hipercard">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="card-name">Nome no Cartão</label>
+                        <input type="text" id="card-name" placeholder="Como está escrito no cartão" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="card-expiry">Validade</label>
+                            <input type="text" id="card-expiry" placeholder="MM/AA" maxlength="5" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="card-cvc">CVC</label>
+                            <input type="text" id="card-cvc" placeholder="000" maxlength="3" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="installments">Parcelas</label>
+                        <select id="installments" required>
+                            <option value="1">1x sem juros</option>
+                            <option value="2">2x sem juros</option>
+                            <option value="3">3x sem juros</option>
+                            <option value="4">4x sem juros</option>
+                            <option value="5">5x sem juros</option>
+                            <option value="6">6x sem juros</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="payment-btn">
+                        Finalizar Pagamento
+                    </button>
+                    
+                    <div class="secure-badge">
+                        <i class="fas fa-lock"></i>
+                        <span>Pagamento 100% seguro com criptografia SSL</span>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Resumo do Pedido -->
+            <div class="payment-summary">
+                <div class="plan-summary">
+                    <div class="plan-header">
+                        <span class="plan-icon"></span>
+                        <div>
+                            <h3 class="plan-name"></h3>
+                            <span class="plan-price"></span>
+                        </div>
+                    </div>
+                    
+                    <ul class="summary-list">
+                        <li class="summary-item">
+                            <span>Subtotal</span>
+                            <span class="summary-subtotal value"></span>
+                        </li>
+                        <li class="summary-item total">
+                            <span>Total</span>
+                            <span class="summary-total value"></span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="benefits">
+                    <h4>Benefícios do Plano</h4>
+                    <ul id="plan-benefits" class="benefits-list">
+                        <!-- Preenchido via JavaScript -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="db.js"></script>
+    <script src="payment.js"></script>
+</body>
+</html> 

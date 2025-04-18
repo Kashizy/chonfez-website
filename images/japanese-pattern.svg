@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="japanese-pattern" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+            <!-- Seigaiha (wave) pattern -->
+            <circle cx="0" cy="0" r="20" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            <circle cx="0" cy="0" r="15" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            <circle cx="0" cy="0" r="10" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            
+            <circle cx="50" cy="0" r="20" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            <circle cx="50" cy="0" r="15" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            <circle cx="50" cy="0" r="10" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            
+            <circle cx="25" cy="25" r="20" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            <circle cx="25" cy="25" r="15" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            <circle cx="25" cy="25" r="10" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            
+            <circle cx="0" cy="50" r="20" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            <circle cx="0" cy="50" r="15" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            <circle cx="0" cy="50" r="10" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            
+            <circle cx="50" cy="50" r="20" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            <circle cx="50" cy="50" r="15" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+            <circle cx="50" cy="50" r="10" fill="none" stroke="#D42C2A" stroke-width="0.5" opacity="0.1"/>
+        </pattern>
+    </defs>
+    <rect width="100" height="100" fill="url(#japanese-pattern)"/>
+</svg> 
