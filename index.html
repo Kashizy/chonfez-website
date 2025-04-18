@@ -8,30 +8,29 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="chonfez-logo.svg" type="image/svg+xml">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header class="header">
-    <div class="nav-container">
+  <nav class="nav">
+    <div class="container nav-container">
       <a href="#" class="logo">チョンフェズ</a>
-      <button class="nav-toggle" aria-label="Abrir menu">
-        <span class="hamburger"></span>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
       </button>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="#hero">Início</a></li>
-          <li><a href="#features">Metodologia</a></li>
-          <li><a href="#plans">Planos</a></li>
-          <li><a href="#testimonials">Depoimentos</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contato</a></li>
-          <li class="auth-links">
-            <a href="auth.html" class="btn btn-secondary btn-sm">Login</a>
-            <a href="auth.html?tab=signup" class="btn btn-primary btn-sm">Cadastro</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link">Início</a></li>
+        <li><a href="#features" class="nav-link">Metodologia</a></li>
+        <li><a href="#plans" class="nav-link">Planos</a></li>
+        <li><a href="#testimonials" class="nav-link">Depoimentos</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link">Contato</a></li>
+        <li class="auth-links">
+          <a href="auth.html" class="nav-link btn btn-primary">Login</a>
+          <a href="auth.html?tab=signup" class="nav-link btn btn-primary">Cadastro</a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
   <main>
     <section id="hero" class="hero">
